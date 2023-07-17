@@ -13,20 +13,19 @@ MySQL database
 ## Installation
 Follow these steps to install and set up the application:
 
-Clone this repository to your local machine.
+```Clone this repository to your local machine.```
 
-Navigate to the project's root directory.
+```Navigate to the project's root directory.```
 
-Install the required dependencies by running the following command:
+```Install the required dependencies by running the following command:```
 
-npm install
+```npm install```
 
-Configure the database connection:
-
-Open the config/connection.js file and provide your MySQL database credentials.
-
-Ensure that your MySQL database server is running.
-Run the database migration script to create the necessary tables by executing the following command:
+```for clarity this project use the following dependencies basically```
+```mysql```
+```sequelize```
+```dotenv```
+```express```
 
 Run the following command to start the application:
 ```node server.js```
@@ -63,7 +62,6 @@ GET /api/tags/:id: Retrieve a specific tag by its ID, including its associated p
 POST /api/tags: Create a new tag with the specified details.
 PUT /api/tags/:id: Update an existing tag with the specified ID.
 DELETE /api/tags/:id: Delete a tag with the specified ID.
-Please refer to the provided route files (product-route.js, category-route.js, and tag-route.js) for more details on the API endpoints and their usage.
 ```
 # File Structure
 
@@ -90,7 +88,7 @@ Please refer to the provided route files (product-route.js, category-route.js, a
 |  |   └──tag-routes.js            // here we are creating the routes for the tag model
 |  ├──index.js                    // on this page we are importing the routes from the api folder and prefixing them with the path /api
 |
-├── seeds/                                     // our models collected here
+├── seeds/                                     // our seeds for each models/tables collected here
 |  ├── category-seeds.js                      // we are creating the category data that we will use to seed the database                
 |  ├──index.js                               //on this page we are importing all of the seed files and then syncing the database    before                                       seeding it with the seed files.
 |  ├──product-seeds.js                     // we are creating the product data that we will use to seed the database  
