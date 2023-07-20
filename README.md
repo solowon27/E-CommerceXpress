@@ -35,6 +35,8 @@ This will start the server, and the application will be accessible at http://loc
 ## Usage
 Once the application is up and running, you can perform various operations related to products, categories, and tags by making HTTP requests to the provided API endpoints.
 
+## test
+run ```npm run seed``` to seed data to your database so that you can test the routes 
 # API Endpoints
 ```
 The application exposes the following API endpoints for products, categories, and tags respectively:
@@ -105,15 +107,6 @@ DELETE /api/tags/:id: Delete a tag with the specified ID.
 ├── README.md             // the read me file   
 └── server.js             // the main file where the server is run from      
 ```
-
-# Dependencies
-The application uses the following dependencies:
-
-```express:``` Fast, unopinionated, minimalist web framework for Node.js
-
-```path:``` Node.js module for working with file and directory paths
-
-```fs:``` Node.js module for interacting with the file system
 # Deployment
 
 ```video link```
@@ -138,7 +131,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 # License
 This project is licensed under the ```MIT License```.
 # Contact 
-for more information about the app please contact me through solowon@hotmail.com
+for more information about the app please contact me through solowon27@hotmail.com
 
 By ```Solomon Tegegne``` with ```University of Utah coding bootcamp``` July 2023
 

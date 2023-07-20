@@ -1,10 +1,10 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');  // import the sequelize constructor and DataTypes from the library
 
-const sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection.js'); // import our connection to the database
 
-class Category extends Model {}
+class Category extends Model {} // create our Category model
 
-Category.init(
+Category.init( // initialize the model's data and configuration
   {
     id: {
       type: DataTypes.INTEGER,
@@ -18,10 +18,10 @@ Category.init(
     },
   },
   {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    sequelize, // pass in our imported sequelize connection (the direct connection to our database)
+    timestamps: false, // don't automatically create timestamp fields for the database entries
+    freezeTableName: true, // don't pluralize the name of the database table
+    underscored: true, // use underscores instead of camel-casing 
     modelName: 'category',
   }
 );
