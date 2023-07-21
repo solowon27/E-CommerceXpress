@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res) => { //this is a get or retrive data http request
   // find all categories
   // be sure to include its associated Products
   try {
@@ -85,3 +85,7 @@ router.delete('/:id', async (req, res) => {
 });
 
 module.exports = router;
+
+//on each files like category-routes.js and so on 
+
+//we do a get, put,, post, update, and delete http requests

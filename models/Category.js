@@ -6,8 +6,8 @@ class Category extends Model {} // create our Category model
 
 Category.init( // initialize the model's data and configuration
   {
-    id: {
-      type: DataTypes.INTEGER,
+    id: { // these are our columns and their properties
+      type: DataTypes.INTEGER, //i think each line easy to understand because we use human language to set the properties
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
@@ -27,3 +27,5 @@ Category.init( // initialize the model's data and configuration
 );
 
 module.exports = Category;
+
+//category model is one of our model which can collaborate with product to groupe many products in one category type

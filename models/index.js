@@ -10,7 +10,7 @@ Product.belongsTo(Category, {
   onDelete: 'CASCADE', // if a category is deleted, the product will be deleted as well
 });
 // Categories have many Products
-Category.hasMany(Product, {
+Category.hasMany(Product, { //one to many
   foreignKey: 'category_id',
   onDelete: 'CASCADE', 
 });
@@ -33,3 +33,7 @@ module.exports = {
   Tag,
   ProductTag,
 }; // export models
+
+//this index file is created for models that allow to create all the associations between the models
+
+//like the relationship mechanism in microsoft access

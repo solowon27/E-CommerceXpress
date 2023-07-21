@@ -9,7 +9,7 @@ const sequelize = require('../config/connection');
 
 //here we are using the async/await functionality to wait for each of these functions,
 // to complete before moving on to the next one
-//this is important because we need to create the data in a specific order so that there are no foreign key constraint errors
+//this is important because we need to create the data in a specific order so that there are no foreign key constraint errors !!!!!!!!
 const seedAll = async () => { 
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');

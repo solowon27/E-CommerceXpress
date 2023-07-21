@@ -5,7 +5,7 @@ const sequelize = require('./config/connection');
 
 //these two lines of code are creating the Express.js server on port 3001
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001; //this is our server port not our sql
 
 //and here we have a middleware that instructs the server on the following way
 app.use(express.json()); //this one instructs the server to parse incoming JSON data
@@ -22,3 +22,6 @@ sequelize.sync().then(() => {
     console.log(`App listening on port ${PORT}`);
   });
 });
+ ///lets test our app
+
+ 

@@ -21,22 +21,21 @@ Follow these steps to install and set up the application:
 
 ```npm install```
 
-```for clarity this project use the following dependencies basically```
-```mysql```
-```sequelize```
-```dotenv```
-```express```
-
+then run ```npm run seed``` to seed data to your database so that you can test the routes,
+after you successfully seed your data-->
 Run the following command to start the application:
 ```node server.js```
 
 This will start the server, and the application will be accessible at http://localhost:3001.
 
+```for clarity this project use the following dependencies basically```
+```mysql```
+```sequelize```
+```dotenv```
+```express```
 ## Usage
 Once the application is up and running, you can perform various operations related to products, categories, and tags by making HTTP requests to the provided API endpoints.
 
-## test
-run ```npm run seed``` to seed data to your database so that you can test the routes 
 # API Endpoints
 ```
 The application exposes the following API endpoints for products, categories, and tags respectively:
@@ -109,8 +108,8 @@ DELETE /api/tags/:id: Delete a tag with the specified ID.
 ```
 # Deployment
 
-```video link```
-```repo link```
+```video link```https://drive.google.com/file/d/1U-4x307xphA0OU7VJ7gMcHxhSb1qUp8f/view
+```repo link``` https://github.com/solowon27/E-CommerceXpress
 
 # Examples 
 

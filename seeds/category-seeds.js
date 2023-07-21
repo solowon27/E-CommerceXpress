@@ -2,7 +2,7 @@ const { Category } = require('../models'); //importing the Category model from t
 
 const categoryData = [ // it is just an array of objects that we want to insert into the category table
   {
-    category_name: 'Shirts',
+    category_name: 'Shirts', //these are our data to be pushed into our category table
   },
   {
     category_name: 'Shorts',
@@ -23,3 +23,6 @@ const categoryData = [ // it is just an array of objects that we want to insert 
 const seedCategories = () => Category.bulkCreate(categoryData); 
 
 module.exports = seedCategories;
+
+
+//our seeds folder collects all the data to be pushed in to our database in each files
